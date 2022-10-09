@@ -53,7 +53,6 @@ body {
   display: inline-block;
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 150px;
   width: 100%;
   background: url("images/first-section-image.jpg");
   background-repeat: no-repeat;
@@ -156,4 +155,71 @@ body {
 }
 .white-card-text {
   font-size: 20px;
+}
+/*about us section*/
+.about-us-section {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+.left-items {
+  color: #00384f;
+  padding: 48px;
+}
+
+.green-title {
+  color: #0fcc7c;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.about-us-heading-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.aboutus-text {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.about-us-image {
+  width: 735px;
+  height: 490px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.box {
+  background-color: #e1f5ec;
+  padding: 16px;
+  border-radius: 10px;
+  height: 116px;
+  width: 600px;
+}
+.box-title {
+  margin: 0 0 6px;
+}
+.box-text {
+  margin: 0 0 10px;
+}
+/*Our business section*/
+.our-business-section {
+  margin-top: 100px;
+}
+.dark_background {
+  background-color: #00384f;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.dark-background-title {
+  font-size: 58px;
+  margin: 30px auto;
+}
+.dark-background-text {
+  font-size: 20px;
+}
+.business_card {
+  gap: 10px;
+}
+.business-card-img {
+  width: 390px;
 }

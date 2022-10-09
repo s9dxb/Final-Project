@@ -2,14 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
+    <!--AOS core-->
+    <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" /> -->
+    <!--Bootstrap library-->
     <link
-      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
+
+    <!--Font awesome-->
+    <!-- <link
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!--CSS stylesheet-->
     <link rel="stylesheet" href="style.css" />
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,23 +60,23 @@
 
       <section class="cards-section">
         <div class="green-card">
-          <h4 class="card-heading-title">
+          <h2 class="card-heading-title">
             Since 2010, our customers have avoided
-          </h4>
+          </h2>
 
           <div class="green-card-elements">
-            <i></i>
+            <i class="bi bi-lightning-charge"></i>
             <p class="stat-number">
               112,845,311<span style="font-size: 25px">+</span>
             </p>
           </div>
 
-          <h4 class="card-heading-title">pounds of CO2.</h4>
+          <h2 class="card-heading-title">pounds of CO2.</h2>
         </div>
         <div class="white-card">
-          <h4 class="card-heading-title">
+          <h2 class="card-heading-title">
             Let’s utilize sun, wind and water in a better way
-          </h4>
+          </h2>
           <p class="white-card-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime,
             dignissimos aliquam! Non, ea quae quibusdam asperiores
@@ -70,24 +87,93 @@
       </section>
     </section>
     <section class="about-us-section">
-      <div class="about-us-title">about us</div>
-      <div>
-        <h2 class="about-us-heading-title">
-          Renewable Energy for a Sustainable World
-        </h2>
-        <p class="aboutus-text">
+      <div class="left-items">
+        <h6 class="green-title">about us</h6>
+        <div>
+          <h1 class="about-us-heading-title">
+            Renewable Energy for a Sustainable World
+          </h1>
+          <p class="aboutus-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-lightbulb"></i>
+          <div>
+            <h3 class="box-title">The Idea</h3>
+            <p class="box-text">
+              Fermentum vehicula venenatis tellus dolor a luctus sodales lectus
+              cras nullam senectus
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        class="about-us-image"
+        src="images/alternative-energy-generation-in-germany.jpg"
+      />
+    </section>
+    <section class="our-business-section">
+      <div class="dark_background">
+        <h6 class="green-title">our business</h6>
+        <h1 class="dark-background-title">
+          Cleaner Energy for a Cleaner World
+        </h1>
+        <p class="dark-background-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
       </div>
-      <div class="box">
-        <h3 class="box-title">The Idea</h3>
-        <p class="box-text">
-          Fermentum vehicula venenatis tellus dolor a luctus sodales lectus cras
-          nullam senectus
-        </p>
+      <div class="container our_business">
+        <div class="row">
+          <div class="col-lg-4 business_card">
+            <img
+              class="business-card-img"
+              src="images/alternative-energy-for-a-innovative-house1.jpg"
+              alt=""
+            />
+            <div>
+              <h2>Residential</h2>
+              <p>
+                Mi elit accumsan malesuada suspendisse consectetur maecenas
+                gravida conubia et quis aliquet
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+          <div class="col-lg-4 business_card">
+            <img
+              class="business-card-img"
+              src="images/foreman-and-businessman-at-solar-energy-station2.jpg"
+              alt=""
+            />
+            <div>
+              <h2>Commercial</h2>
+              <p>
+                Mi elit accumsan malesuada suspendisse consectetur maecenas
+                gravida conubia et quis aliquet
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+          <div class="col-lg-4 business_card">
+            <img
+              class="business-card-img"
+              src="images/aerial-view-of-wind-turbines-and-windmills3.jpg"
+              alt=""
+            />
+            <div>
+              <h2>Carbon Offsets</h2>
+              <p>
+                Mi elit accumsan malesuada suspendisse consectetur maecenas
+                gravida conubia et quis aliquet
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <img src="images/alternative-energy-generation-in-germany.jpg" />
     </section>
   </body>
 </html>
