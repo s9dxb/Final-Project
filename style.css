@@ -151,7 +151,8 @@ body {
   font-size: 28px;
   margin: 20px auto;
 }
-.learn-more-btn {
+.learn-more-btn,
+.grid_bloc_btn {
   padding: 10px 0;
   border-radius: 30px;
   margin: 20px 5px;
@@ -181,9 +182,10 @@ body {
   }
 }
 
-.left-items {
-  color: #00384f;
+.left-items,
+.grid_section_titles {
   padding: 48px;
+  color: #00384f;
 }
 
 .green-title {
@@ -191,7 +193,8 @@ body {
   text-transform: uppercase;
   font-size: 18px;
 }
-.about-us-heading-title {
+.about-us-heading-title,
+.grid-section-heading-title {
   font-size: 60px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -281,7 +284,7 @@ body {
 }
 .card-title {
   color: #00384f;
-  font-size: 2rem;
+  font-size: clamp(2rem, 1rem + 10vw, 2rem);
   font-weight: 700;
 }
 .card-text {
@@ -289,8 +292,32 @@ body {
   color: darkgray;
   font-weight: 100;
 }
-@media screen and (max-width: 320px) {
-  .dark_background {
-    padding: 20px; /*use the clamp property*/
-  }
+/*Grid section*/
+.grid_section {
+  align-items: center;
+  justify-content: center;
+}
+.grid_section_titles {
+  text-align: center;
+}
+.grid_section_blocs {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.grid_bloc {
+  padding: 32px;
+  border: red solid;
+  border-radius: 30px;
+  margin: 10px;
+  max-width: 31.7%;
+  color: #00384f;
+}
+.grid_bloc_title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.grid_bloc_text {
+  padding: 20px 30px 30px auto;
 }
