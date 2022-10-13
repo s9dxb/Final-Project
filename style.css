@@ -8,6 +8,7 @@ html {
 body {
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
+  background: rgba(150, 172, 192, 0.027);
 }
 #navbar {
   z-index: 1;
@@ -73,15 +74,15 @@ body {
   background-size: contain;
   max-width: 100%;
 }
-.shade {
+/* .shade {
   width: 100%;
   height: auto;
-  background: rgba(11, 13, 15, 0.089);
+  background: rgba(50, 103, 156, 0.144);
   background-size: contain;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 .welcome-title {
   font-size: clamp(0.2rem, 1.5rem); /*!min*/
   font-weight: 700;
@@ -141,9 +142,8 @@ body {
 /*!===================================================*/
 .green-card {
   background-color: #0fcc7c;
-  font-size: 16px;
-  margin: auto 15px;
-  padding: 30px;
+  margin: 16px;
+  padding: 48px;
   border-radius: 40px;
   color: white;
 }
@@ -158,27 +158,32 @@ body {
 }
 .white-card {
   background-color: white;
-  padding: 30px;
-  font-size: 16px;
-  margin: 15px;
-  padding: 50px;
+  margin: 16px;
+  padding: 48px;
   align-content: center;
   border-radius: 40px;
   text-align: left;
   color: #00384f;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.white-card-text {
+  font-style: 14px;
+  margin-bottom: 14px;
+  font-weight: 100;
+}
 .card-heading-title {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 900;
   margin: 20px auto;
 }
 .learn-more-btn,
 .grid_bloc_btn {
+  width: 150px;
+  margin: 20px 5px;
+}
+.btn {
   padding: 10px 0;
   border-radius: 30px;
-  margin: 20px 5px;
-  width: 150px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   cursor: pointer;
@@ -199,7 +204,8 @@ body {
 .about-us-section {
   display: flex;
   height: 100%;
-  align-items: stretch;
+  margin: 60px 40px;
+  /* align-items: stretch; */
 }
 
 @media screen and (max-width: 700px) {
@@ -224,7 +230,7 @@ body {
 }
 .about-us-heading-title,
 .grid-section-heading-title {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -234,9 +240,9 @@ body {
   margin-bottom: 40px;
 }
 .about-us-image {
-  width: 735px;
+  width: 690px;
   max-width: 100%;
-  height: 490px;
+  height: 480px;
   border-radius: 15px;
   margin-right: 10px;
 }
@@ -251,27 +257,37 @@ body {
   }
 }
 .box {
+  display: flex;
   background-color: #e1f5ec;
   padding: 16px;
+  align-items: flex-start;
   border-radius: 10px;
-  height: 116px;
-  width: 600px;
+  max-width: 600px;
+}
+.box_icone {
+  width: 40px;
+  height: 40px;
+  margin-top: 12px;
+  margin-right: 15px;
+  /* align-items: flex-start; */
 }
 @media screen and (max-width: 700px) {
   .aboutus-text {
     width: 100%;
   }
-  .box {
-    margin-right: 30px;
-    height: 116px;
-    width: 600px;
-  }
+}
+.box_items {
+  margin: auto;
 }
 .box-title {
-  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 5px auto;
 }
 .box-text {
-  margin: 0 0 10px;
+  margin: 10px 0;
+  font-weight: 100;
 }
 /*Our business section*/
 .our-business-section {
@@ -283,37 +299,41 @@ body {
   color: #fff;
   text-align: center;
   padding-top: 10rem;
+  max-width: 100%;
   padding-bottom: 200px;
 }
-.dark-background-title {
-  font-size: clamp(2rem, 1rem + 10vw, 5rem);
+.main-background-title {
+  font-size: clamp(2rem, 1rem + 10vw, 3.3rem);
   font-weight: 700;
+}
+.dark_background-title {
   margin: 30px auto;
 }
 .dark-background-text {
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .our_business {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: -7em 20px 7em 20px;
+  justify-content: center;
+  margin: -7em 70px 7em 70px;
   align-items: center;
+}
+@media screen and (max-width: 768) {
+  .our_business {
+    grid-template-columns: 1fr;
+  }
 }
 
 .business_card {
   border-radius: 10px;
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
 }
-/*! .business-card-img:hover {
-  position: relative;
-  transform: scale3d(1.1, 1.1, 1);
-  transition-duration: 150ms;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
-  cursor: pointer;
-  overflow: hidden;
-} */
+
 .business-card-img {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
@@ -324,18 +344,19 @@ body {
 }
 .card-title {
   color: #00384f;
-  font-size: clamp(2rem, 1rem + 10vw, 2rem);
+  font-size: clamp(1rem, 1.6rem, 1.6rem);
   font-weight: 700;
 }
 .card-text {
-  font-size: 20px;
-  color: darkgray;
+  font-size: 18px;
+  color: #54595f;
   font-weight: 100;
 }
 /*Grid section*/
 .grid_section {
   align-items: center;
   justify-content: center;
+  margin: 200px auto;
 }
 .grid_section_titles {
   text-align: center;
@@ -344,7 +365,8 @@ body {
 .grid_section_blocs {
   justify-content: center;
   display: flex;
-  flex-direction: row;
+  margin: auto;
+  /* flex-direction: row; */
 }
 .grid_bloc {
   padding: 32px;
@@ -366,4 +388,71 @@ body {
   padding: 20px 30px 30px auto;
   font-size: 1.3rem;
   font-weight: normal;
+}
+/*Form section*/
+
+.benefits_div {
+  float: right;
+  padding: 40px;
+  max-width: 700px;
+}
+.second_dark_background {
+  background-color: #00384f;
+  color: #fff;
+  max-width: 100%;
+  padding: 50px 40px;
+  height: 700px;
+}
+.form-heading-title {
+  margin: 30px auto;
+}
+.second-dark-background-text {
+  font-size: 20px;
+  margin: 30px 0;
+}
+.form_section_list li {
+  margin: 10px auto;
+  font-size: 20px;
+}
+.form_section_list {
+  list-style: none;
+  padding-left: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
+  border-radius: 30px;
+  padding: 100px 40px;
+
+  margin: -7em 30px 7em 0;
+}
+.form_grid {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  padding: 10px 20px;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 600px;
+}
+input,
+textarea {
+  background-color: #e1f5ec;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+}
+label {
+  display: inline-block;
+  color: #00384f;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 5px 0;
+}
+#submit_btn {
+  margin-top: 10px;
 }

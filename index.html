@@ -15,15 +15,19 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
+    <a target="_blank" href="https://icons8.com/icon/HNHQfLbA1P1n/lightbulb"
+      >Lightbulb</a
+    >
+    icon by
+    <a target="_blank" href="https://icons8.com">Icons8</a>
     <!--Font awesome-->
-    <!-- <link
+    <link
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="style.css" />
     <!--Fonts-->
@@ -54,7 +58,7 @@
       <button id="header-quote-button">Get a Quote</button>
     </nav>
     <section class="welcome-section">
-      <div class="shade"></div>
+      <!-- <div class="shade"></div> -->
       <h4 class="welcome-title">welcome to sabrina unlimited</h4>
       <h1 class="main-title">Cleaner Energy for a Cleaner World</h1>
       <h2 class="welcome-section-description">
@@ -65,33 +69,49 @@
       <button class="discover_more_btn section-btn">Discover More</button>
 
       <section class="cards-section">
-        <div class="green-card">
-          <h2 class="card-heading-title">
-            Since 2010, our customers have avoided
-          </h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="green-card col-sm-4">
+              <h2 class="card-heading-title">
+                Since 2010, our customers have avoided
+              </h2>
 
-          <div class="green-card-elements">
-            <i class="bi bi-lightning-charge">lightning icone 2022</i>
-            <p class="stat-number">
-              112,845,311<span style="font-size: 25px; font-weight: 700"
-                >+</span
-              >
-            </p>
+              <div class="green-card-elements">
+                <i class="bi bi-lightning-charge"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-lightning-charge"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"
+                    /></svg
+                ></i>
+                <p class="stat-number">
+                  112,845,311<span style="font-size: 25px; font-weight: 700"
+                    >+</span
+                  >
+                </p>
+              </div>
+
+              <h2 class="card-heading-title">pounds of CO2.</h2>
+            </div>
+            <div class="white-card col-sm">
+              <h2 class="card-heading-title">
+                Let’s utilize sun, wind and water in a better way
+              </h2>
+              <p class="white-card-text">
+                Ac facilisi dolor lobortis a faucibus imperdiet sapien laoreet
+                pellentesque vulputate. Euismod posuere viverra adipiscing
+                gravida venenatis. Vitae augue potenti inceptos parturient ante
+                porttitor dictum auctor.
+              </p>
+              <button class="learn-more-btn btn">Learn More</button>
+            </div>
           </div>
-
-          <h2 class="card-heading-title">pounds of CO2.</h2>
-        </div>
-        <div class="white-card">
-          <h2 class="card-heading-title">
-            Let’s utilize sun, wind and water in a better way
-          </h2>
-          <p class="white-card-text">
-            Ac facilisi dolor lobortis a faucibus imperdiet sapien laoreet
-            pellentesque vulputate. Euismod posuere viverra adipiscing gravida
-            venenatis. Vitae augue potenti inceptos parturient ante porttitor
-            dictum auctor.
-          </p>
-          <button class="learn-more-btn">Learn More</button>
         </div>
       </section>
     </section>
@@ -108,8 +128,8 @@
           </p>
         </div>
         <div class="box">
-          <i class="bi bi-lightbulb"></i>
-          <div>
+          <img class="box_icone" src="images/icons8-lightbulb-50.png" />
+          <div class="box_items">
             <h3 class="box-title">The Idea</h3>
             <p class="box-text">
               Fermentum vehicula venenatis tellus dolor a luctus sodales lectus
@@ -126,7 +146,7 @@
     <section class="our-business-section">
       <div class="dark_background">
         <h6 class="green-title">our business</h6>
-        <h1 class="dark-background-title">
+        <h1 class="main-background-title dark-background-title">
           Cleaner Energy for a Cleaner World
         </h1>
         <p class="dark-background-text">
@@ -195,43 +215,43 @@
       </div>
       <div class="grid_section_blocs container-fluid">
         <div class="row">
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">Solar Panel Installation</h5>
             <p class="grid_bloc_text">
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">Hybrid Back-up System</h5>
             <p class="grid_bloc_text">
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">30Kva Victron Solar Hybrid System</h5>
             <p class="grid_bloc_text">
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">Project Development</h5>
             <p class="grid_bloc_text">
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">
               Engineering, Procurement & Construction
@@ -240,17 +260,90 @@
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
-          <div class="grid_bloc col-lg-4 col-xs-10">
+          <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">Operation & Maintenance</h5>
             <p class="grid_bloc_text">
               Venenatis quisque velit purus ex enim sagittis dictum iaculis
               maecenas est bibendum
             </p>
-            <button class="grid_bloc_btn">Learn more</button>
+            <button class="grid_bloc_btn btn">Learn more</button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="form_section">
+      <div class="second_dark_background">
+        <div class="benefits_div">
+          <h6 class="green-title">get a quote</h6>
+          <h1 class="main-background-title form-heading-title">
+            Let’s experience the power of the sun
+          </h1>
+          <p class="second-dark-background-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="form_section_list">
+            <li>&#10004; 100% renewable content from wind or solar energy.</li>
+            <li>&#10004; Free electricity during nights or weekends.</li>
+            <li>
+              &#10004; Access to local solar energy without the need to install
+              rooftop panels.
+            </li>
+            <li>
+              &#10004; Resources to green up your life, including Tree Free
+              Billing, carbon offsets and weekly summary emails.
+            </li>
+          </ul>
+        </div>
+
+        <div class="form_div">
+          <form>
+            <div class="form_grid">
+              <label for="fname"
+                >Name <span style="color: red">*</span>
+                <input type="text" name="Name" id="fname" placeholder="Name" />
+              </label>
+              <label for="company"
+                >Company
+                <input
+                  type="text"
+                  name="Company"
+                  id="company"
+                  placeholder="Company"
+                />
+              </label>
+              <label for="femail"
+                >Email <span style="color: red">*</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="femail"
+                  placeholder="Email"
+                />
+              </label>
+              <label for="phone"
+                >Phone <input type="text" id="phone" placeholder="Phone"
+              /></label>
+            </div>
+            <label for="subject"
+              >Subject <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+            <label for="message">Message</label>
+            <textarea id="message" name="subject" placeholder="Message">
+Message</textarea
+            >
+            <button type="submit" value="Submit" id="submit_btn" class="btn">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </section>
