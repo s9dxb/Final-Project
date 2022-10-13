@@ -2,7 +2,11 @@
   box-sizing: border-box;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
+  color: #fff;
   font-family: "Source Sans Pro", sans-serif;
 }
 #navbar {
@@ -12,102 +16,121 @@ body {
   position: absolute;
   width: 100%;
   align-items: center;
-  height: 70px;
+  height: 5.625rem;
   background-color: transparent;
-  color: white;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 #logo {
-  font-size: 25px;
+  font-size: 1.6rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
 }
 #navlist {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   width: auto;
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 .list-element {
-  padding: 0 10px;
-  margin: 0 10px;
-  font-size: 20px;
+  padding: 0 0.625rem;
+  margin: 0 0.625rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 #navlist a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
+#navlist a:hover {
+  color: #0fcc7c;
+  transition: all 0.5s;
+}
 #header-quote-button {
-  padding: 10px 25px;
+  padding: 0.75rem 1.563rem;
   border-radius: 30px;
-  border: none;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  border: 2px solid #0fcc7c;
+  font-size: 1.125rem;
   cursor: pointer;
   background-color: #0fcc7c;
-  border: solid #0fcc7c;
   color: white;
 }
-/*Welcome section*/
+#header-quote-button:hover {
+  background-color: #00384f;
+  border: 2px solid #00384f;
+  transition: all 0.5s;
+}
+/*!Welcome section*/
 .welcome-section {
   display: inline-block;
   text-align: center;
-  padding-top: 150px;
-  width: 100%;
+  padding-top: 11rem;
   background: url("images/first-section-image.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   max-width: 100%;
-  /* filter: saturate(130%); */
+}
+.shade {
+  width: 100%;
+  height: auto;
+  background: rgba(11, 13, 15, 0.089);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .welcome-title {
-  color: white;
-  font-size: 22px;
+  font-size: clamp(0.2rem, 1.5rem); /*!min*/
   font-weight: 700;
-  line-height: 40px;
   text-transform: uppercase;
 }
 .main-title {
-  color: white;
-  font-size: 80px;
+  font-size: 5rem; /*!min*/
   font-weight: 900;
-  width: 900px;
-  margin: 30px auto;
+  max-width: 56.25rem;
+  margin: 1.875rem auto;
 }
 .welcome-section-description {
-  color: white;
-  font-size: 24px;
-  width: 700px;
-  margin: 30px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 43.75rem;
+  margin: 1.875rem auto;
 }
-#section-quote-button {
-  padding: 15px 0;
+.section-btn {
+  padding: 0.938rem 0;
   border-radius: 30px;
-  margin: 0 5px;
-  width: 300px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  padding: 0.938rem 0;
+  width: 18.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   cursor: pointer;
+  color: white;
+}
+.section-quote-button {
   background-color: #0fcc7c;
   border: 2px solid #0fcc7c;
-  color: white;
+}
+.section-quote-button:hover {
+  background-color: #00384f;
+  border: 2px solid #00384f;
+  transition: all 0.5s;
 }
 .discover_more_btn {
-  padding: 15px 0;
-  border-radius: 30px;
-  margin: 0 5px;
-  width: 300px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  cursor: pointer;
   background-color: transparent;
-  border: 2px solid;
-  color: white;
+  border: 3px solid #fff;
 }
+.discover_more_btn:hover {
+  color: #0fcc7c;
+  border: 3px solid #0fcc7c;
+  transition: all 0.5s;
+}
+/*cards section*/
 .cards-section {
   display: flex;
-  padding: 80px 20px;
-  /* position: absolute; */
+  padding: 5rem 2.5rem;
 }
 @media screen and (max-width: 700px) {
   .cards-section {
@@ -115,13 +138,12 @@ body {
     width: 100%;
   }
 }
-
+/*!===================================================*/
 .green-card {
   background-color: #0fcc7c;
   font-size: 16px;
-  margin: auto 20px;
-  padding: 40px;
-  height: 320px;
+  margin: auto 15px;
+  padding: 30px;
   border-radius: 40px;
   color: white;
 }
@@ -131,24 +153,24 @@ body {
 }
 .stat-number {
   font-size: 35px;
+  font-weight: 700;
   margin: 10px auto;
 }
 .white-card {
   background-color: white;
+  padding: 30px;
   font-size: 16px;
   margin: 15px;
   padding: 50px;
   align-content: center;
-  align-items: center;
-  /* height: 320px; */
   border-radius: 40px;
   text-align: left;
   color: #00384f;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
 .card-heading-title {
   font-size: 28px;
+  font-weight: 900;
   margin: 20px auto;
 }
 .learn-more-btn,
@@ -164,8 +186,14 @@ body {
   border: 2px solid #0fcc7c;
   color: white;
 }
+.learn-more-btn:hover {
+  background-color: #00384f;
+  /* border: 2px solid #00384f; */
+  /*! add a transition*/
+}
 .white-card-text {
   font-size: 20px;
+  font-weight: 200;
 }
 /*about us section*/
 .about-us-section {
@@ -191,7 +219,8 @@ body {
 .green-title {
   color: #0fcc7c;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .about-us-heading-title,
 .grid-section-heading-title {
@@ -199,7 +228,8 @@ body {
   margin-bottom: 30px;
   font-weight: 700;
 }
-.aboutus-text {
+.aboutus-text,
+.grid_section_text {
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -275,10 +305,20 @@ body {
   border-radius: 10px;
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
 }
+/*! .business-card-img:hover {
+  position: relative;
+  transform: scale3d(1.1, 1.1, 1);
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  cursor: pointer;
+  overflow: hidden;
+} */
 .business-card-img {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
 }
+
 .business-card-items {
   margin: 30px;
 }
@@ -300,6 +340,7 @@ body {
 .grid_section_titles {
   text-align: center;
 }
+
 .grid_section_blocs {
   justify-content: center;
   display: flex;
@@ -307,11 +348,14 @@ body {
 }
 .grid_bloc {
   padding: 32px;
-  border: red solid;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
   border-radius: 30px;
   margin: 10px;
   max-width: 31.7%;
   color: #00384f;
+}
+.grid_bloc:hover {
+  color: red;
 }
 .grid_bloc_title {
   font-size: 1.3rem;
@@ -320,4 +364,6 @@ body {
 }
 .grid_bloc_text {
   padding: 20px 30px 30px auto;
+  font-size: 1.3rem;
+  font-weight: normal;
 }
