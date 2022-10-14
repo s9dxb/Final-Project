@@ -15,11 +15,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <a target="_blank" href="https://icons8.com/icon/HNHQfLbA1P1n/lightbulb"
-      >Lightbulb</a
-    >
-    icon by
-    <a target="_blank" href="https://icons8.com">Icons8</a>
     <!--Font awesome-->
     <link
       type="text/css"
@@ -167,7 +162,7 @@
               Mi elit accumsan malesuada suspendisse consectetur maecenas
               gravida conubia et quis aliquet
             </p>
-            <button class="learn-more-btn">Learn more</button>
+            <button class="learn-more-btn btn">Learn more</button>
           </div>
         </div>
         <div class="business_card">
@@ -182,7 +177,7 @@
               Mi elit accumsan malesuada suspendisse consectetur maecenas
               gravida conubia et quis aliquet
             </p>
-            <button class="learn-more-btn">Learn more</button>
+            <button class="learn-more-btn btn">Learn more</button>
           </div>
         </div>
         <div class="business_card">
@@ -197,7 +192,7 @@
               Mi elit accumsan malesuada suspendisse consectetur maecenas
               gravida conubia et quis aliquet
             </p>
-            <button class="learn-more-btn">Learn more</button>
+            <button class="learn-more-btn btn">Learn more</button>
           </div>
         </div>
       </div>
@@ -297,9 +292,9 @@
             </li>
           </ul>
         </div>
-
+        <!---->
         <div class="form_div">
-          <form>
+          <!-- <form>
             <div class="form_grid">
               <label for="fname"
                 >Name <span style="color: red">*</span>
@@ -340,6 +335,76 @@
             <textarea id="message" name="subject" placeholder="Message">
 Message</textarea
             >
+            <button type="submit" value="Submit" id="submit_btn" class="btn">
+              Submit
+            </button>
+          </form> -->
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputName"
+                  >Name <span style="color: red">*</span></label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCompany">Company</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCompany"
+                  placeholder="Company"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail"
+                  >Email <span style="color: red">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputSubject"
+                >Subject <span style="color: red">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputSubject"
+                placeholder="Subject"
+              />
+              <label for="inputMessage">Message</label>
+              <textarea
+                type="text"
+                class="form-control"
+                name="message"
+                id="inputMessage"
+                cols="30"
+                rows="4"
+                placeholder="Message"
+              >
+      Message</textarea
+              >
+            </div>
             <button type="submit" value="Submit" id="submit_btn" class="btn">
               Submit
             </button>

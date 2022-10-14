@@ -181,7 +181,8 @@ body {
   width: 150px;
   margin: 20px 5px;
 }
-.btn {
+.btn,
+.learn-more-btn {
   padding: 10px 0;
   border-radius: 30px;
   font-family: "Source Sans Pro", sans-serif;
@@ -191,10 +192,11 @@ body {
   border: 2px solid #0fcc7c;
   color: white;
 }
-.learn-more-btn:hover {
+.btn:hover {
   background-color: #00384f;
-  /* border: 2px solid #00384f; */
-  /*! add a transition*/
+  color: #fff;
+  border: 2px solid #00384f;
+  transition: all 0.5s;
 }
 .white-card-text {
   font-size: 20px;
@@ -231,6 +233,7 @@ body {
 .about-us-heading-title,
 .grid-section-heading-title {
   font-size: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -377,7 +380,8 @@ body {
   color: #00384f;
 }
 .grid_bloc:hover {
-  color: red;
+  background-color: #e1f5ec;
+  transition: all 0.5s;
 }
 .grid_bloc_title {
   font-size: 1.3rem;
@@ -390,6 +394,11 @@ body {
   font-weight: normal;
 }
 /*Form section*/
+.form_section {
+  /* display: flex; */
+  margin-bottom: 100px;
+  max-width: 100%;
+}
 
 .benefits_div {
   float: right;
@@ -418,26 +427,33 @@ body {
   list-style: none;
   padding-left: 0;
 }
-form {
+/* form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
   border-radius: 30px;
   padding: 100px 40px;
-
   margin: -7em 30px 7em 0;
 }
 .form_grid {
   display: grid;
   align-content: center;
   grid-template-columns: repeat(2, auto);
-  gap: 5px;
+  gap: 15px;
   padding: 10px 20px;
   justify-content: center;
   margin-inline: auto;
   max-width: 600px;
 }
+#fname,
+#femail,
+#company,
+#phone {
+  width: 300px; 
+}
+
+
 input,
 textarea {
   background-color: #e1f5ec;
@@ -455,4 +471,41 @@ label {
 }
 #submit_btn {
   margin-top: 10px;
+} */
+
+/*!new form*/
+* {
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
+  padding: 100px 40px;
+  border-radius: 30px;
+  width: 50%;
+  margin: -7em 30px 7em 0;
+}
+#inputName,
+#inputEmail,
+#inputPhone,
+#inputCompany,
+#inputSubject,
+#inputMessage {
+  background-color: #e1f5ec;
+  font-size: 16px;
+  color: #54595f;
+  border: none;
+  border-radius: 30px;
+  min-height: 47px;
+  padding: 6px 16px;
+}
+label {
+  display: inline-block;
+  color: #00384f;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 5px 0;
 }
