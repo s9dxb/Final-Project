@@ -61,8 +61,35 @@
     />
   </head>
   <body>
+    <header>
+      <div id="brand"><a href="/">Sabrina Unlimited</a></div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/service">Service</a></li>
+          <li><a href="/project">Project</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <button id="quote_btn">Get a Quote</button>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/service">Service</a></li>
+          <li><a href="/project">Project</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li id="quote_btn"><a href="/quote">Get a Quote</a></li>
+        </ul>
+      </div>
+    </header>
+
     <!--Navbar-->
-    <nav id="navbar">
+    <!-- <nav id="navbar">
       <h3 id="logo">Sabrina Unlimited</h3>
       <ul id="navlist">
         <li class="list-element"><a href="#">Home</a></li>
@@ -73,9 +100,8 @@
         <li class="list-element"><a href="#">Page</a></li>
       </ul>
       <button id="header-quote-button">Get a Quote</button>
-    </nav>
+    </nav> -->
     <section class="welcome-section">
-      <!-- <div class="shade"></div> -->
       <h4 class="welcome-title">welcome to sabrina unlimited</h4>
       <h1 class="main-title">Cleaner Energy for a Cleaner World</h1>
       <h2 class="welcome-section-description">
@@ -502,5 +528,6 @@ Message</textarea
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

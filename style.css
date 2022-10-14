@@ -10,7 +10,151 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background: rgba(150, 172, 192, 0.027);
 }
-#navbar {
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: transparent;
+  position: absolute;
+  height: 5.625rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #fff;
+  text-decoration: none;
+}
+ul a:hover {
+  color: #0fcc7c;
+  transition: 0.5s;
+}
+
+ul li {
+  padding: 0 0.625rem;
+  margin: 0 0.625rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#quote_btn {
+  padding: 0.75rem 1.563rem;
+  border-radius: 30px;
+  background-color: #0fcc7c;
+  font-size: 1.125rem;
+  border: 2px #0fcc7c;
+  color: #fff;
+}
+#quote_btn:hover {
+  background-color: #00384f;
+  transition: 0.5s;
+  border: 2px #00384f;
+}
+
+#quote_btn a {
+  color: #ffffff;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.25em;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  background-color: #00384f;
+  display: none;
+  position: absolute;
+  align-items: center;
+  top: 70px;
+  left: 0;
+  height: calc(70vh - 50px);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.mobile-menu li {
+  margin-bottom: 20px;
+  /* padding: 8px; */
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+/* @media (max_width: 964px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+  #quote_btn {
+    display: block;
+  }
+} */
+
+/* #navbar {
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -63,7 +207,7 @@ body {
   background-color: #00384f;
   border: 2px solid #00384f;
   transition: all 0.5s;
-}
+} */
 /*!Welcome section*/
 .welcome-section {
   display: inline-block;
