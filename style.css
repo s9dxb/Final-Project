@@ -509,3 +509,15 @@ label {
   font-size: 18px;
   margin: 5px 0;
 }
+
+.carousel_section {
+  margin: 100px auto;
+  background-color: #5f90a328;
+}
+.carousel_img {
+  height: 650px;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform. Microsoft. Blur(PixelRadius='0');
+}
