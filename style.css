@@ -5,12 +5,19 @@
 html {
   scroll-behavior: smooth;
 }
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+  }
+}
 body {
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
   background: rgba(150, 172, 192, 0.027);
 }
-
+/*Header*/
 header a {
   text-decoration: none;
 }
@@ -23,6 +30,12 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #00394f;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
 }
 
 #brand {
@@ -113,6 +126,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 0;
 }
 
 .mobile-menu {
@@ -142,121 +156,78 @@ ul li {
   }
 }
 
-/* @media (max_width: 964px) {
-  header nav {
-    display: none;
-  }
-  #hamburger-icon {
-    display: block;
-  }
-  #quote_btn {
-    display: block;
-  }
-} */
-
-/* #navbar {
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  align-items: center;
-  height: 5.625rem;
-  background-color: transparent;
-  padding: 0 1.25rem;
-}
-#logo {
-  font-size: 1.6rem;
-  font-family: "Arial", sans-serif;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-}
-#navlist {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  width: auto;
-  margin: 0 1.25rem;
-}
-.list-element {
-  padding: 0 0.625rem;
-  margin: 0 0.625rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-#navlist a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
-#navlist a:hover {
-  color: #0fcc7c;
-  transition: all 0.5s;
-}
-#header-quote-button {
-  padding: 0.75rem 1.563rem;
-  border-radius: 30px;
-  border: 2px solid #0fcc7c;
-  font-size: 1.125rem;
-  cursor: pointer;
-  background-color: #0fcc7c;
-  color: white;
-}
-#header-quote-button:hover {
-  background-color: #00384f;
-  border: 2px solid #00384f;
-  transition: all 0.5s;
-} */
 /*!Welcome section*/
 .welcome-section {
-  display: inline-block;
-  text-align: center;
-  padding-top: 11rem;
+  padding-top: 50px;
+}
+.welcome_section_background {
+  top: 0;
   background: url("images/first-section-image.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  height: 90vh;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.welcome-section-titles {
+  text-align: center;
+  padding-top: 10rem;
+  display: block;
   max-width: 100%;
 }
-/* .shade {
-  width: 100%;
-  height: auto;
-  background: rgba(50, 103, 156, 0.144);
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 .welcome-title {
-  font-size: clamp(0.2rem, 1.5rem); /*!min*/
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .main-title {
-  font-size: 5rem; /*!min*/
+  font-size: 72px;
   font-weight: 900;
-  max-width: 56.25rem;
+  max-width: 60rem;
   margin: 1.875rem auto;
+}
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 50px;
+  }
+  .welcome-title {
+    font-size: 16px;
+  }
 }
 .welcome-section-description {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
-  max-width: 43.75rem;
+  max-width: 60rem;
+  letter-spacing: 1px;
   margin: 1.875rem auto;
 }
-.section-btn {
+/* .section-btn {
   padding: 0.938rem 0;
   border-radius: 30px;
-  padding: 0.938rem 0;
+  width: 18.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+} */
+.section-btn {
+  padding: 0.8rem 0;
+  border-radius: 30px;
   width: 18.75rem;
   font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
   color: white;
 }
+@media screen and (min-width: 600px) {
+  .section-btn {
+    font-size: 2.25rem;
+  }
+}
 .section-quote-button {
   background-color: #0fcc7c;
   border: 2px solid #0fcc7c;
+  margin: 5px;
 }
 .section-quote-button:hover {
   background-color: #00384f;
@@ -266,27 +237,34 @@ ul li {
 .discover_more_btn {
   background-color: transparent;
   border: 3px solid #fff;
+  margin: 5px;
 }
 .discover_more_btn:hover {
   color: #0fcc7c;
   border: 3px solid #0fcc7c;
   transition: all 0.5s;
 }
+.welcome_section_buttons {
+  margin: 40px 0;
+}
 /*cards section*/
 .cards-section {
   display: flex;
   padding: 5rem 2.5rem;
+  margin: -15em 20px 7em 20px;
 }
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .cards-section {
     display: block;
     width: 100%;
   }
+} */
+.cards-container {
+  gap: 20px;
 }
-/*!===================================================*/
 .green-card {
   background-color: #0fcc7c;
-  margin: 16px;
+  /* margin: 16px; */
   padding: 48px;
   border-radius: 40px;
   color: white;
@@ -302,7 +280,7 @@ ul li {
 }
 .white-card {
   background-color: white;
-  margin: 16px;
+  /* margin: 16px; */
   padding: 48px;
   align-content: center;
   border-radius: 40px;
@@ -346,24 +324,37 @@ ul li {
   font-size: 20px;
   font-weight: 200;
 }
+@media screen and (max-width: 992px) {
+  .cards-section {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-container {
+    display: block;
+    margin-top: 200px;
+  }
+}
 /*about us section*/
 .about-us-section {
   display: flex;
   height: 100%;
   margin: 60px 40px;
-  /* align-items: stretch; */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1020px) {
   .about-us-section {
-    display: inline-block;
-    margin: 30px;
-    width: 100%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
   }
 }
 
 .left-items,
-.grid_section_titles {
+.grid_section_titles,
+.carousel_titles {
   padding: 48px;
   color: #00384f;
 }
@@ -375,11 +366,24 @@ ul li {
   font-weight: 700;
 }
 .about-us-heading-title,
-.grid-section-heading-title {
+.grid-section-heading-title,
+.carousel-heading-title {
   font-size: 50px;
   margin-top: 40px;
   margin-bottom: 30px;
   font-weight: 700;
+  color: #00384f;
+}
+@media screen and (max-width: 1200px) {
+  .about-us-heading-title,
+  .grid-section-heading-title,
+  .carousel-heading-title {
+    font-size: 30px;
+  }
+  .aboutus-text,
+  .grid_section_text {
+    font-size: 16;
+  }
 }
 .aboutus-text,
 .grid_section_text {
@@ -387,11 +391,13 @@ ul li {
   margin-bottom: 40px;
 }
 .about-us-image {
-  width: 690px;
-  max-width: 100%;
-  height: 480px;
+  display: block;
+  max-width: 70rem;
+  text-align: center;
+  align-self: center;
+
   border-radius: 15px;
-  margin-right: 10px;
+  margin: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -399,24 +405,30 @@ ul li {
     padding: 0;
   }
   .about-us-image {
-    display: inline;
     width: 100%;
+    margin: auto;
+    align-self: center;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
   }
 }
 .box {
   display: flex;
+  font-size: 16px;
   background-color: #e1f5ec;
   padding: 16px;
   align-items: flex-start;
   border-radius: 10px;
   max-width: 600px;
+  margin: auto auto 30px auto;
 }
+
 .box_icone {
   width: 40px;
   height: 40px;
   margin-top: 12px;
   margin-right: 15px;
-  /* align-items: flex-start; */
 }
 @media screen and (max-width: 700px) {
   .aboutus-text {
@@ -440,6 +452,7 @@ ul li {
 .our-business-section {
   margin-top: 100px;
   text-align: center;
+  width: 100%;
 }
 .dark_background {
   background-color: #00384f;
@@ -447,7 +460,13 @@ ul li {
   text-align: center;
   padding-top: 10rem;
   max-width: 100%;
+  width: 100%;
   padding-bottom: 200px;
+}
+@media screen and (max-width: 768px) {
+  .dark_background {
+    max-width: 100%;
+  }
 }
 .main-background-title {
   font-size: clamp(2rem, 1rem + 10vw, 3.3rem);
@@ -470,7 +489,7 @@ ul li {
   margin: -7em 70px 7em 70px;
   align-items: center;
 }
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .our_business {
     grid-template-columns: 1fr;
   }
@@ -484,7 +503,19 @@ ul li {
 .business-card-img {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
+  /* transition: transform 0.7s ease;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9); */
 }
+/* .business-card-img:hover {
+  transform: scale3d(1.2, 1.1, 1);
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+} */
 
 .business-card-items {
   margin: 30px;
@@ -499,21 +530,46 @@ ul li {
   color: #54595f;
   font-weight: 100;
 }
+
+/*carousel section */
+.carousel_section {
+  margin: 100px auto;
+}
+.carousel_img {
+  height: 650px;
+  text-align: center;
+  align-items: center;
+  opacity: 0.9;
+  /* -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform. Microsoft. Blur(PixelRadius='0'); */
+}
+.carousel_title {
+  font-weight: 900;
+}
+.carousel_titles {
+  margin: auto;
+  text-align: center;
+  max-width: 900px;
+}
+
 /*Grid section*/
 .grid_section {
   align-items: center;
   justify-content: center;
-  margin: 200px auto;
+  margin: 100px auto;
 }
 .grid_section_titles {
   text-align: center;
 }
-
+.row_div {
+  justify-content: center;
+}
 .grid_section_blocs {
   justify-content: center;
   display: flex;
   margin: auto;
-  /* flex-direction: row; */
 }
 .grid_bloc {
   padding: 32px;
@@ -570,52 +626,8 @@ ul li {
 .form_section_list {
   list-style: none;
   padding-left: 0;
+  display: block;
 }
-/* form {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
-  border-radius: 30px;
-  padding: 100px 40px;
-  margin: -7em 30px 7em 0;
-}
-.form_grid {
-  display: grid;
-  align-content: center;
-  grid-template-columns: repeat(2, auto);
-  gap: 15px;
-  padding: 10px 20px;
-  justify-content: center;
-  margin-inline: auto;
-  max-width: 600px;
-}
-#fname,
-#femail,
-#company,
-#phone {
-  width: 300px; 
-}
-
-
-input,
-textarea {
-  background-color: #e1f5ec;
-  font-size: 20px;
-  border: none;
-  border-radius: 20px;
-  padding: 6px 16px;
-}
-label {
-  display: inline-block;
-  color: #00384f;
-  font-weight: 600;
-  font-size: 16px;
-  margin: 5px 0;
-}
-#submit_btn {
-  margin-top: 10px;
-} */
 
 /*!new form*/
 * {
@@ -652,16 +664,4 @@ label {
   font-weight: 600;
   font-size: 18px;
   margin: 5px 0;
-}
-
-.carousel_section {
-  margin: 100px auto;
-  background-color: #5f90a328;
-}
-.carousel_img {
-  height: 650px;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: progid:DXImageTransform. Microsoft. Blur(PixelRadius='0');
 }

@@ -54,13 +54,13 @@
       href="https://fonts.googleapis.com/css2?family=Mulish&family=Outfit:wght@600&family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish&family=Outfit:wght@600&family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!--Header-->
     <header>
       <div id="brand"><a href="/">Sabrina Unlimited</a></div>
       <nav>
@@ -87,34 +87,28 @@
         </ul>
       </div>
     </header>
-
-    <!--Navbar-->
-    <!-- <nav id="navbar">
-      <h3 id="logo">Sabrina Unlimited</h3>
-      <ul id="navlist">
-        <li class="list-element"><a href="#">Home</a></li>
-        <li class="list-element"><a href="#">About us</a></li>
-        <li class="list-element"><a href="#">Services</a></li>
-        <li class="list-element"><a href="#">Project</a></li>
-        <li class="list-element"><a href="#">Contact us</a></li>
-        <li class="list-element"><a href="#">Page</a></li>
-      </ul>
-      <button id="header-quote-button">Get a Quote</button>
-    </nav> -->
+    <!--welcome section-->
     <section class="welcome-section">
-      <h4 class="welcome-title">welcome to sabrina unlimited</h4>
-      <h1 class="main-title">Cleaner Energy for a Cleaner World</h1>
-      <h2 class="welcome-section-description">
-        Help protect the environment by powering your home with 100% renewable
-        energy.
-      </h2>
-      <button class="section-quote-button section-btn">Get a Quote</button>
-      <button class="discover_more_btn section-btn">Discover More</button>
-
+      <div class="welcome_section_background">
+        <div class="welcome-section-titles">
+          <h4 class="welcome-title">welcome to sabrina unlimited</h4>
+          <h1 class="main-title">Cleaner Energy for a Cleaner World</h1>
+          <h2 class="welcome-section-description">
+            Help protect the environment by powering your home with 100%
+            renewable energy.
+          </h2>
+          <div class="welcome_section_buttons">
+            <button class="section-quote-button section-btn">
+              Get a Quote
+            </button>
+            <button class="discover_more_btn section-btn">Discover More</button>
+          </div>
+        </div>
+      </div>
       <section class="cards-section">
         <div class="container-fluid">
-          <div class="row">
-            <div class="green-card col-sm-4">
+          <div class="row cards-container">
+            <div class="green-card col col-sm col-md col-lg-4 col-xl-4">
               <h2 class="card-heading-title">
                 Since 2010, our customers have avoided
               </h2>
@@ -142,7 +136,7 @@
 
               <h2 class="card-heading-title">pounds of CO2.</h2>
             </div>
-            <div class="white-card col-sm">
+            <div class="white-card col col-sm col-md col-lg col-xl">
               <h2 class="card-heading-title">
                 Let’s utilize sun, wind and water in a better way
               </h2>
@@ -158,6 +152,7 @@
         </div>
       </section>
     </section>
+    <!--AboutUs section-->
     <section class="about-us-section">
       <div class="left-items">
         <h6 class="green-title">about us</h6>
@@ -186,6 +181,7 @@
         src="images/alternative-energy-generation-in-germany.jpg"
       />
     </section>
+    <!--Our Business Section-->
     <section class="our-business-section">
       <div class="dark_background">
         <h6 class="green-title">our business</h6>
@@ -245,6 +241,108 @@
         </div>
       </div>
     </section>
+    <!-- carousel section -->
+    <section class="carousel_section">
+      <div class="carousel_titles">
+        <h6 class="green-title">our value</h6>
+        <h1 class="carousel-heading-title">
+          More sustainable power source, more life for the planet.
+        </h1>
+        <p class="carousel-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 carousel_img"
+              src="images/pexels-pixabay-414805.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel_title">
+                The better source of energy for the better tomorrow
+              </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Delectus architecto repudiandae nihil hic? Doloribus deserunt
+                quidem delectus distinctio error nihil ut aliquid, eaque minus
+                quibusdam, tempore accusantium obcaecati, maiores hic!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 carousel_img"
+              src="images/pexels-pixabay-414807.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel_title">
+                Live Green, Love Green, Think Green.
+              </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Delectus architecto repudiandae nihil hic? Doloribus deserunt
+                quidem delectus distinctio error nihil ut aliquid, eaque minus
+                quibusdam, tempore accusantium obcaecati, maiores hic!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 carousel_img"
+              src="images/pexels-pixabay-414837.jpg"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel_title">
+                Alone we can do so little, together we can do so much.
+              </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Delectus architecto repudiandae nihil hic? Doloribus deserunt
+                quidem delectus distinctio error nihil ut aliquid, eaque minus
+                quibusdam, tempore accusantium obcaecati, maiores hic!
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
     <!--Grid section-->
     <section class="grid_section">
       <div class="grid_section_titles">
@@ -257,7 +355,7 @@
         </p>
       </div>
       <div class="grid_section_blocs container-fluid">
-        <div class="row">
+        <div class="row row_div">
           <div class="grid_bloc col-sm-4 col-xs">
             <i class="grid_bloc_icon"></i>
             <h5 class="grid_bloc_title">Solar Panel Installation</h5>
@@ -317,6 +415,7 @@
         </div>
       </div>
     </section>
+    <!--Form section-->
     <section class="form_section">
       <div class="second_dark_background">
         <div class="benefits_div">
@@ -342,51 +441,6 @@
         </div>
         <!---->
         <div class="form_div">
-          <!-- <form>
-            <div class="form_grid">
-              <label for="fname"
-                >Name <span style="color: red">*</span>
-                <input type="text" name="Name" id="fname" placeholder="Name" />
-              </label>
-              <label for="company"
-                >Company
-                <input
-                  type="text"
-                  name="Company"
-                  id="company"
-                  placeholder="Company"
-                />
-              </label>
-              <label for="femail"
-                >Email <span style="color: red">*</span>
-                <input
-                  type="email"
-                  name="email"
-                  id="femail"
-                  placeholder="Email"
-                />
-              </label>
-              <label for="phone"
-                >Phone <input type="text" id="phone" placeholder="Phone"
-              /></label>
-            </div>
-            <label for="subject"
-              >Subject <span style="color: red">*</span></label
-            >
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-            />
-            <label for="message">Message</label>
-            <textarea id="message" name="subject" placeholder="Message">
-Message</textarea
-            >
-            <button type="submit" value="Submit" id="submit_btn" class="btn">
-              Submit
-            </button>
-          </form> -->
           <form>
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -460,74 +514,7 @@ Message</textarea
         </div>
       </div>
     </section>
-    <section class="carousel_section">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100 carousel_img"
-              src="images/eolienne-france-champs.png"
-              alt="First slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Title</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Delectus architecto repudiandae nihil hic? Doloribus deserunt
-                quidem delectus distinctio error nihil ut aliquid, eaque minus
-                quibusdam, tempore accusantium obcaecati, maiores hic!
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 carousel_img"
-              src="images/eoliennes-arguments-pour-contre.webp"
-              alt="Second slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 carousel_img"
-              src="images/first-section-image.jpg"
-              alt="Third slide"
-            />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    </section>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
