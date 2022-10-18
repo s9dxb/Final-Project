@@ -536,7 +536,8 @@ ul li {
   margin: 100px auto;
 }
 .carousel_img {
-  height: 650px;
+  /* height: 650px; */
+  height: auto;
   text-align: center;
   align-items: center;
   opacity: 0.9;
@@ -558,7 +559,7 @@ ul li {
 .grid_section {
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 .grid_section_titles {
   text-align: center;
@@ -576,7 +577,7 @@ ul li {
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
   border-radius: 30px;
   margin: 10px;
-  max-width: 31.7%;
+  /* max-width: 31.7%; */
   color: #00384f;
 }
 .grid_bloc:hover {
@@ -595,17 +596,18 @@ ul li {
 }
 /*Form section*/
 .form_section {
-  /* display: flex; */
+  display: block;
   margin-bottom: 100px;
   max-width: 100%;
 }
 
 .benefits_div {
   float: right;
-  padding: 40px;
+  padding: 40px 20px 0 40px;
   max-width: 700px;
 }
 .second_dark_background {
+  display: flex;
   background-color: #00384f;
   color: #fff;
   max-width: 100%;
@@ -641,8 +643,8 @@ form {
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
   padding: 100px 40px;
   border-radius: 30px;
-  width: 50%;
-  margin: -7em 30px 7em 0;
+  /* width: 50%; */
+  margin: -10em auto 7em 0;
 }
 #inputName,
 #inputEmail,
@@ -664,4 +666,20 @@ label {
   font-weight: 600;
   font-size: 18px;
   margin: 5px 0;
+}
+@media screen and (max-width: 992px) {
+  .form-heading-title {
+    font-size: 25px;
+  }
+  .form_section_list {
+    font-size: 20px;
+  }
+  label {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .second_dark_background {
+    display: block;
+  }
 }
