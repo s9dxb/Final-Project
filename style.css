@@ -370,7 +370,7 @@ ul li {
 .grid-section-heading-title,
 .carousel-heading-title {
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
   font-weight: 700;
   color: #00384f;
@@ -459,7 +459,7 @@ ul li {
   padding-top: 10rem;
   max-width: 100%;
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 @media screen and (max-width: 768px) {
   .dark_background {
@@ -469,6 +469,7 @@ ul li {
 .main-background-title {
   font-size: clamp(2rem, 1rem + 10vw, 5.3rem);
   font-weight: 700;
+  margin-top: 50px;
 }
 .dark_background-title {
   margin: 30px auto;
@@ -496,13 +497,22 @@ ul li {
 .business_card {
   border-radius: 10px;
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
+  overflow: hidden;
+}
+.business_card:hover {
+  border-radius: 0 0 10px 10px;
 }
 .business-card-img {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
+  transition: 0.5s;
+}
+.business_card:hover img {
+  transform: scale(1.1);
 }
 .business-card-items {
   margin: 30px;
+  overflow: hidden;
 }
 .card-title {
   color: #00384f;
@@ -516,7 +526,7 @@ ul li {
 }
 /*carousel section */
 .carousel_section {
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
 }
 .carousel_img {
   height: auto;
@@ -540,7 +550,7 @@ ul li {
 .grid_section {
   align-items: center;
   justify-content: center;
-  margin: 150px auto;
+  margin: 100px auto 150px auto;
 }
 .grid_section_titles {
   text-align: center;
