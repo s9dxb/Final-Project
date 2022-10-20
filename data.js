@@ -1,23 +1,23 @@
 let shopItemsData = [
   {
     id: "firstItem",
-    name: "Residential",
+    name: "Echo lamp",
     price: 999,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/alternative-energy-for-a-innovative-house1.jpg",
+    img: "images/lampe-ecolo-rechargeable.jfif",
   },
   {
     id: "secondItem",
-    name: "Commercial",
+    name: "Solar Camera/Projector",
     price: 900,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/foreman-and-businessman-at-solar-energy-station2.jpg",
+    img: "images/camera-projecteur-solaire.jfif",
   },
   {
     id: "thirdItem",
-    name: "Carbon Offsets",
+    name: "Solar desk lamp",
     price: 800,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/aerial-view-of-wind-turbines-and-windmills3.jpg",
+    img: "images/Lampe-solaire-bureau.jpg",
   },
 ];
