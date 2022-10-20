@@ -172,7 +172,6 @@ ul li {
 }
 .welcome_section_background {
   top: 0;
-
   background: url("images/first-section-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,20 +200,25 @@ ul li {
   max-width: 60rem;
   margin: 1.875rem auto;
 }
-@media screen and (max-width: 600px) {
-  .main-title {
-    font-size: 50px;
-  }
-  .welcome-title {
-    font-size: 16px;
-  }
-}
+
 .welcome-section-description {
   font-size: 20px;
   font-weight: 700;
   max-width: 60rem;
   letter-spacing: 1px;
   margin: 1.875rem auto;
+}
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 40px;
+  }
+  .welcome-title {
+    font-size: 20px;
+  }
+  .welcome-section-description {
+    font-size: 16px;
+    padding: auto 20px;
+  }
 }
 .section-btn {
   padding: 0.8rem 0;
@@ -230,6 +234,7 @@ ul li {
     font-size: 2.25rem;
   }
 }
+
 .section-quote-button {
   background-color: #0fcc7c;
   border: 2px solid #0fcc7c;
@@ -242,12 +247,12 @@ ul li {
 }
 .discover_more_btn {
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   margin: 5px;
 }
 .discover_more_btn:hover {
   color: #0fcc7c;
-  border: 3px solid #0fcc7c;
+  border: 2px solid #0fcc7c;
   transition: all 0.5s;
 }
 .welcome_section_buttons {
@@ -257,7 +262,7 @@ ul li {
 .cards-section {
   display: flex;
   padding: 5rem 2.5rem;
-  margin: -10em 20px 7em 20px;
+  margin: -7em 20px 7em 20px;
 }
 .cards-container {
   gap: 20px;
@@ -337,7 +342,7 @@ ul li {
   }
   .cards-container {
     display: block;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 }
 /*about us section*/
@@ -384,12 +389,16 @@ ul li {
   .about-us-heading-title,
   .grid-section-heading-title,
   .carousel-heading-title,
-  .shop_heading_title {
-    font-size: 30px;
+  .shop_heading_title,
+  .main-background-title {
+    font-size: 40px;
   }
   .aboutus-text,
   .grid_section_text {
     font-size: 16;
+  }
+  .green-title {
+    font-size: 30px;
   }
 }
 .aboutus-text,
