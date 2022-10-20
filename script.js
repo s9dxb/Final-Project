@@ -77,6 +77,7 @@ const validateInputs = () => {
   } else {
     setSuccess(inputEmail);
   }
+
   if (inputSubjectValue === "") {
     setError(inputSubject, "A Subject is required");
   } else {
