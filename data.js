@@ -8,7 +8,7 @@ let shopItemsData = [
   },
   {
     id: "secondItem",
-    name: "Solar Camera/Projector",
+    name: "Solar Camera/Lamp",
     price: 900,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     img: "images/camera-projecteur-solaire.jfif",

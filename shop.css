@@ -87,9 +87,9 @@ img,
 .details {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  gap: 10px;
+  gap: 40px;
   border-radius: 16px;
   background-color: #fff;
 }
@@ -123,7 +123,7 @@ img,
   color: #fff;
   border: none;
   padding: 6px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -153,7 +153,6 @@ img,
   width: 400px;
   height: 100%;
 }
-
 .title-price-x {
   display: flex;
   justify-content: space-between;
@@ -170,6 +169,7 @@ img,
   color: #fff;
   border-radius: 4px;
   padding: 3px 6px;
+  justify-content: end;
 }
 /*heart icone*/
 [id="toggle-heart"] {
@@ -183,14 +183,3 @@ img,
 [id="toggle-heart"]:checked + label {
   color: #e2264d;
 }
-/* @keyframes heart {
-    0%,
-    17.5% {
-      font-size: 0;
-    }
-  }
-  
-  [id="toggle-heart"]:checked + label {
-    will-change: font-size;
-    animation: heart 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.49);
-  } */
