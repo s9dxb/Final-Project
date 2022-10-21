@@ -186,7 +186,7 @@ ul li {
 }
 @media (max-width: 600px) {
   .welcome-section-titles {
-    padding-top: 10rem;
+    padding-top: 6rem;
   }
 }
 .welcome-title {
@@ -342,7 +342,7 @@ ul li {
   }
   .cards-container {
     display: block;
-    /* margin-top: 100px; */
+    margin-top: 100px;
   }
 }
 /*about us section*/
@@ -399,7 +399,7 @@ ul li {
     font-size: 16;
   }
   .green-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .aboutus-text,
@@ -516,7 +516,7 @@ ul li {
 .business_card {
   border-radius: 10px;
   box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 15%);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .business_card:hover {
   border-radius: 0 0 10px 10px;
@@ -619,6 +619,13 @@ ul li {
   padding: 40px 20px 0 40px;
   max-width: 700px;
 }
+
+@media screen and (max-width: 600px) {
+  .benefits_div {
+    padding: 0;
+  }
+}
+
 .second_dark_background {
   display: flex;
   background-color: #00384f;
