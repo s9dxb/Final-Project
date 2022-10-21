@@ -394,7 +394,8 @@ ul li {
     font-size: 40px;
   }
   .aboutus-text,
-  .grid_section_text {
+  .grid_section_text,
+  .market_text {
     font-size: 16;
   }
   .green-title {
@@ -402,7 +403,8 @@ ul li {
   }
 }
 .aboutus-text,
-.grid_section_text {
+.grid_section_text,
+.market_text {
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -559,9 +561,6 @@ ul li {
   margin: auto;
   text-align: center;
   max-width: 900px;
-}
-.carousel-item-text {
-  font-size: 20px;
 }
 /*Grid section*/
 .grid_section {
@@ -722,6 +721,7 @@ label {
 
 /* shop */
 .shop_section {
+  color: #00384f;
   display: flex;
   margin: 60px auto;
   max-width: fit-content;
