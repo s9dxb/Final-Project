@@ -49,6 +49,7 @@ ul {
   list-style: none;
   height: 100%;
   display: flex;
+
   align-items: center;
   justify-content: space-around;
 }
@@ -153,7 +154,7 @@ ul li {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 786px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   #brand {
     font-size: 1.7rem;
   }
@@ -260,7 +261,7 @@ ul li {
 .cards-section {
   display: flex;
   padding: 5rem 2.5rem;
-  margin: -12em 20px 7em 20px;
+  margin: -7em 20px 7em 20px;
 }
 .cards-container {
   gap: 20px;
@@ -337,7 +338,7 @@ ul li {
     padding: 0;
     align-items: center;
     justify-content: center;
-    margin: -15em 20px 7em 20px;
+    margin: -12em 20px 7em 20px;
   }
   .cards-container {
     display: block;
