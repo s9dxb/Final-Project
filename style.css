@@ -522,11 +522,6 @@ ul li {
 .business_card:hover {
   border-radius: 0 0 10px 10px;
 }
-@media screen and (min-width: 992px) {
-  .business_card {
-    overflow: visible;
-  }
-}
 .business-card-img {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
